@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Diaz - Creadora de contenido</title>
+    <meta name="description"
+        content="Portfolio de Sofia Martínez, diseñadora gráfica y estudiante de tecnicatura en publicidad">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h2>Maria Jose Quiroga Diaz</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Creando
+                    <span class="gradient-text">experiencias visuales</span>
+                    que inspiran y conectan
+                </h1>
+                <p class="hero-description">
+                    Soy Maria Jose, Editora, creadora de contenido y estudiante de tecnicatura en publicidad.
+                    Me apasiona crear diseños que cuenten historias y generen impacto.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver mi trabajo</a>
+                    <a href="#contacto" class="btn btn-outline">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🎨</div>
+                    <p>Diseño Gráfico</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">📱</div>
+                    <p>Branding</p>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">✨</div>
+                    <p>Creatividad</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conoce mi historia y pasión por el diseño</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>¡Hola! Soy Majo Diaz</h3>
+                    <p>
+                        Tengo 21 años y actualmente estoy cursando la tecnicatura en publicidad.
+                        Mi pasión por el diseño gráfico comenzó desde muy joven, cuando descubrí
+                        que podía combinar arte y comunicación para crear mensajes poderosos.
+                    </p>
+                    <p>
+                        Me especializo en crear identidades visuales que conecten con las audiencias
+                        y transmitan los valores de marca de manera efectiva. Creo firmemente que
+                        el buen diseño no solo se ve bien, sino que también funciona bien.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Meses estudiando</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Proyectos completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedicación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="assets/majo.jpg" alt="Majo Diaz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mi Portfolio</h2>
+                <p class="section-subtitle">Una selección de mis mejores trabajos</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <!-- COMMICSONG -->
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="assets/portfolioimg/Avon/1.png" alt="Proyecto de Branding">
+                        <div class="portfolio-overlay">
+                            <h3>Flyer de Avon</h3>
+                            <p>Diseño para redes sociales</p>
+                            <button class="portfolio-btn" onclick="openModal('modal1')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <video src="assets/portfolioimg/Avon.mp4" id="videoavon"></video>
+                        <div class="portfolio-overlay">
+                            <h3>Campaña de Avon</h3>
+                            <p>Anuncio Publisitario</p>
+                            <button class="portfolio-btn" onclick="openModal('modal2')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <video src="assets/portfolioimg/burger.mp4"></video>
+                        <div class="portfolio-overlay">
+                            <h3>Flyer Hamburguesa</h3>
+                            <p>Diseño para Redes Sociales</p>
+                            <button class="portfolio-btn" onclick="openModal('modal3')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="assets/portfolioimg/cumple.png"
+                            alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <h3>Flyer Cumpleaños</h3>
+                            <p>Diseño de Tarjeta de Invitacion</p>
+                            <button class="portfolio-btn" onclick="openModal('modal4')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="assets/portfolioimg/pastelitos.png" alt="Web Design">
+                        <div class="portfolio-overlay">
+                            <h3>Flyer de Venta</h3>
+                            <p>Diseño de Flyer Publisitario</p>
+                            <button class="portfolio-btn" onclick="openModal('modal5')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="assets/portfolioimg/YaLlega/1.png"
+                            alt="Poster Design">
+                        <div class="portfolio-overlay">
+                            <h3>Carrousel para Instagram</h3>
+                            <p>Diseño para Redes Sociales</p>
+                            <button class="portfolio-btn" onclick="openModal('modal6')">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis Habilidades</h2>
+                <p class="section-subtitle">Herramientas y competencias que domino</p>
+            </div>
+
+            <div class="skills-content">
+                <!-- Herramientas Técnicas -->
+                <div class="tech-skills">
+                    <h3>Herramientas Técnicas</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="assets/svg/PS.svg" alt="">
+                            <h4>Photoshop</h4>
+                            <span class="skill-level">Avanzado</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/svg/AI.svg" alt="">
+                            <h4>Illustrator</h4>
+                            <span class="skill-level">Avanzado</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/svg/figma.svg" alt="">
+                            <h4>Figma</h4>
+                            <span class="skill-level">Intermedio</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/svg/canva.svg" alt="">
+                            <h4>Canva</h4>
+                            <span class="skill-level">Experto</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/svg/capcut.svg" alt="">
+                            <h4>CapCut</h4>
+                            <span class="skill-level">Experto</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/svg/excel.svg" alt="">
+                            <h4>Excel</h4>
+                            <span class="skill-level">Experto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Blandas -->
+                <div class="soft-skills">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #6366f1;">
+                                    <circle cx="50" cy="30" r="15" />
+                                    <path d="M20,70 Q50,45 80,70 Q50,95 20,70" />
+                                    <circle cx="35" cy="60" r="3" />
+                                    <circle cx="50" cy="55" r="3" />
+                                    <circle cx="65" cy="60" r="3" />
+                                </svg>
+                            </div>
+                            <h4>Creatividad</h4>
+                            <p>Generación de ideas innovadoras</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #8b5cf6;">
+                                    <rect x="20" y="30" width="60" height="40" rx="5" />
+                                    <circle cx="35" cy="45" r="3" />
+                                    <circle cx="50" cy="45" r="3" />
+                                    <circle cx="65" cy="45" r="3" />
+                                    <path d="M30,55 L70,55 M35,60 L65,60" />
+                                </svg>
+                            </div>
+                            <h4>Comunicación</h4>
+                            <p>Clara expresión de ideas visuales</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #f59e0b;">
+                                    <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="3" />
+                                    <path d="M35,50 L45,60 L65,40" stroke="currentColor" stroke-width="3" fill="none" />
+                                    <circle cx="50" cy="20" r="3" />
+                                    <circle cx="80" cy="50" r="3" />
+                                    <circle cx="50" cy="80" r="3" />
+                                    <circle cx="20" cy="50" r="3" />
+                                </svg>
+                            </div>
+                            <h4>Atención al Detalle</h4>
+                            <p>Precisión en cada elemento</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #10b981;">
+                                    <rect x="25" y="25" width="50" height="35" rx="3" />
+                                    <path d="M35,35 L45,40 L55,35 M35,45 L65,45 M35,55 L55,55" />
+                                    <circle cx="70" cy="70" r="8" />
+                                    <path d="M66,70 L69,73 L74,66" />
+                                </svg>
+                            </div>
+                            <h4>Organización</h4>
+                            <p>Gestión eficiente de proyectos</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #ef4444;">
+                                    <path d="M50,20 L60,40 L80,40 L65,55 L70,75 L50,65 L30,75 L35,55 L20,40 L40,40 Z" />
+                                </svg>
+                            </div>
+                            <h4>Pasión</h4>
+                            <p>Dedicación total al diseño</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <svg width="60" height="60" viewBox="0 0 100 100" style="fill: #06b6d4;">
+                                    <circle cx="35" cy="35" r="8" />
+                                    <circle cx="65" cy="35" r="8" />
+                                    <circle cx="35" cy="65" r="8" />
+                                    <circle cx="65" cy="65" r="8" />
+                                    <path d="M43,35 L57,35 M35,43 L35,57 M43,65 L57,65 M65,43 L65,57" />
+                                </svg>
+                            </div>
+                            <h4>Trabajo en Equipo</h4>
+                            <p>Colaboración efectiva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Trabajemos juntos!</h3>
+                    <p>
+                        Estoy disponible para proyectos freelance y oportunidades de colaboración.
+                        Si tienes una idea que quieres convertir en realidad, me encantaría escucharte.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>maria.j.quiroga.09@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+54 266 434 5906</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>San Luis, Argentina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." rows="6"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maria Jose Quiroga Diaz</h3>
+                    <p>Diseñadora Gráfica & Estudiante de Publicidad</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/loldqz/?__pwa=1#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@lolitaq?_t=ZM-8xZScrHitJ0&_r=1" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Desarrollado por <a href="https://github.com/Rothezee" class="link">Roth Alan</a>. Todos
+                    los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+            <h3>App de Avon</h3>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/portfolioimg/Avon/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/portfolioimg/Avon/2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Promocion Avon</h3>
+            <video controls><source src="assets/portfolioimg/Avon.mp4" type="video/mp4" autoplay></video>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Flyer hamburgesa</h3>
+            <video controls><source src="assets/portfolioimg/burger.mp4" type="video/mp4" autoplay></video>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+            <h3>Tarjeta de Invitacion</h3>
+            <img src="assets/portfolioimg/cumple.png" alt="Proyecto detalle">
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal5')">&times;</span>
+            <h3>Fechas Patrias</h3>
+            <img src="assets/portfolioimg/pastelitos.png"
+                alt="Proyecto detalle">
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal6')">&times;</span>
+        <h3>Carrousel para Instagram</h3>
+
+        <div id="carousel-lujuria" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-lujuria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-lujuria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-lujuria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-lujuria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel-lujuria" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="assets/portfolioimg/YaLlega/1.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/portfolioimg/YaLlega/2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/portfolioimg/YaLlega/3.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/portfolioimg/YaLlega/4.png" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/portfolioimg/YaLlega/5.png" class="d-block w-100" alt="Slide 5">
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lujuria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-lujuria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
